@@ -15,7 +15,7 @@
         <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
         <mysql.version>5.1.32</mysql.version>
         <druid.version>1.0.9</druid.version>
-        <httpclient.version>4.3.5</httpclient.version>
+        <httpclient.version>4.3.6</httpclient.version>
         <joda-time.version>2.5</joda-time.version>
         <pagehelper.version>3.4.2-fix</pagehelper.version>
         <jsqlparser.version>0.9.1</jsqlparser.version>
