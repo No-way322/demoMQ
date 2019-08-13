@@ -1,0 +1,286 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #e9f5f8;
+}
+
+body, ul, img, span {
+    margin: 0;
+    padding: 0;
+}
+
+.time-list {
+    width: 94%;
+    margin: 0px 3% 30px;
+    list-style: none;
+    overflow: auto;
+}
+
+#head {
+    height: 30px;
+    margin: 10px 10px 0px 10px;
+    line-height: 20px;
+    border-bottom: 1px solid #DEDDDB;
+}
+
+.back {
+    display: block;
+    background-image: url('../.././../Images/b.png');
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position-y: center;
+}
+
+.time-list .first-item {
+    height: 100px;
+}
+
+.time-list .item {
+    display: block;
+    padding: 10px;
+}
+
+.item-time {
+    width: 195px;
+    height: 100px;
+    float: left;
+    font-size: 16px;
+}
+
+.item-time .time-value {
+    display: block;
+    height: 18px;
+    padding-left: 15px;
+    padding-top: 21.5px;
+}
+
+.item-time .time-line {
+    display: block;
+    background-image: url('../../../../Images/line.png');
+    background-repeat: no-repeat;
+    height: 8px;
+    background-position-x: -111px;
+}
+
+.item-time .time-result, .item-time .time-treeNodeName {
+    display: block;
+    padding-left: 15px;
+}
+
+.item-time .time-reason {
+    display: block;
+    height: 39.5px;
+    padding-left: 15px;
+}
+
+.item-overview {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10px 10px 0;
+}
+
+.item-overview .overview-content {
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 20px;
+}
+
+.item-overview .overview-content span {
+    display: block;
+    height: 100%;
+    line-height: 50px;
+    float: left;
+    margin-right: 30px;
+}
+
+.time-list .first-item .item-icon {
+    background-image: url('../../../../Images/clock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100px;
+    float: left;
+}
+
+.time-list .first-item .item-icon .item-icon-title {
+    font-weight: bold;
+    color: #1D7091;
+    position: relative;
+    top: 45px;
+    left: 20px;
+    font-size: 13px;
+}
+
+.time-list .first-item .item-icon .item-icon-time {
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.list-item {
+    background-image: url('../../../../Images/bg-line.png');
+    background-repeat: repeat-y;
+    background-position-x: 49px;
+    padding-top: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list-item > div {
+}
+
+.list-item .item-icon {
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    color: white;
+    background-image: url('../../../../Images/gray.png');
+    background-size: 100px;
+}
+
+.list-item.arrived .item-icon {
+    background-image: url('../../../../Images/blue.png');
+}
+
+.list-item.skip .item-icon {
+    background-image: url('../../../../Images/green.png');
+}
+
+.list-item.skip .item-overview {
+    display: none;
+}
+
+.list-item.no-reach .item-icon {
+    background-image: url('../../../../Images/gray.png');
+}
+
+.list-item .item-icon-title {
+    display: block;
+    line-height: 100px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.list-item .item-overview {
+    display: flex;
+    align-items: center;
+}
+
+.list-item .item-overview .list-table {
+    border-radius: 0 20px;
+    padding: 10px 25px;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    vertical-align: central;
+    background-color: white;
+    min-height: 180px;
+    box-shadow: 0px 0px 10px #158ad8;
+    margin: 10px;
+}
+
+.list-item.alarm .item-overview .list-table {
+    box-shadow: 0px 0px 10px red;
+}
+
+.list-item .item-overview .list-table-head {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.list-item .item-overview .list-table-row {
+    overflow: hidden;
+}
+
+.list-item .item-overview .list-table-head .list-table-cell {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 16px;
+    text-indent: 20px;
+    background-image: url('../../../../Images/a.png');
+}
+
+.list-item .item-overview .list-table-head .list-table-cell:first-child {
+    background-image: url('../../../../Images/p.png');
+}
+
+.list-item .item-overview .list-table-head .list-table-cell:last-child {
+    background-image: url('../../../../Images/j.png');
+}
+
+.list-item .item-overview .list-table-cell {
+    width: 25%;
+    float: left;
+    color: #6379B1;
+    line-height: 28px;
+}
+
+.list-item .item-overview .list-table-cell:first-child {
+    width: 50%;
+}
+
+.list-item .item-overview .list-table-row .list-table-cell:first-child {
+    padding-top: 14px;
+    width: 15%;
+}
+
+.list-item .item-overview .list-table-row .list-table-cell {
+    height: 56px;
+    width: 85%;
+}
+
+.list-item .item-overview .list-img {
+    margin-top: 3px;
+    float: left;
+    height: 180px;
+    width: 240px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 15px #b1babd;
+}
+
+.list-item .item-overview .list-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-viewer {
+    overflow: hidden;
+}
+
+.img-viewer img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-history {
+    margin: 5px 0 0 5px;
+    padding: 5px 10px;
+    background-color: #40c08d;
+    color: #fff;
+    border: none;
+}
+
+.btn-history:hover {
+    cursor: pointer;
+    background: #2F4F47;
+}

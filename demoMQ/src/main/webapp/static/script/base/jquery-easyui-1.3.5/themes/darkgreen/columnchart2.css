@@ -1,0 +1,58 @@
+﻿
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #083A42;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: lcdNum;
+    src: url(/fonts/DS-DIGI.TTF);
+}
+
+.lcdNumItem {
+    width: 110px;
+    height: 36px;
+    background: url(images/LCD.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: center center; */
+    display: inline-block;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #46F3DB;
+    font-family: lcdNum;
+    font-size: 25px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    color: #46F3DB;
+    /* font-weight: bold; */
+    /* margin: 0 18px; */
+    font-size: 16px;
+    font-family: 寰蒋闆呴粦;
+    color: #ADEEF7;
+    width: 131px;
+    text-align: left;
+    display: inline-block;
+}
+
+.item {
+    margin: 24px 7px;
+    text-align: center;
+}
+
+.header {
+    color: #46F3DB;
+    font-size: 23px;
+    font-weight: bold;
+}

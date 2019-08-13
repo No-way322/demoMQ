@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit-1.2.xsd">
+
+
+    <!-- <rabbit:connection-factory id="connectionFactory" -->
+    <!-- rabbitmq连接配置 -->
+    <rabbit:connection-factory id="connectionFactory" virtual-host="/"
+                               host="127.0.0.1" username="zhengxiang" password="322122"
+                               port="5672"/>
+    <!-- <rabbit:connection-factory id="connectionFactory" virtual-host="/"
+                               host="localhost" username="hejun" password="123456"/> -->
+    <!-- 连接服务配置 -->
+    <!--<rabbit:connection-factory id="connectionFactory"-->
+    <!--host="${rabbitmq.host}" port="${rabbitmq.port}" username="${rabbitmq.username}"-->
+    <!--password="${rabbitmq.password}" channel-cache-size="${rabbitmq.channel.cache.size}" />-->
+
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+         <!-- 声明队列 messageQueue -->
+    <!-- 声明消息队列，消息系统监听队列 -->
+    <rabbit:queue id="messageQueue" durable="true"
+                  auto-delete="false" exclusive="false" name="messageQueue"/>
+    <!-- exchange queue binging key 绑定 -->
+    <!-- 在Spring的配置中，在定义队列的配置中，将参数durable设置为“false”，则该队列为非持久化队列，设置成“true”时，该队列就为持久化队列 -->
+    <rabbit:topic-exchange name="message" durable="true" auto-delete="false" id="message">
+        <!-- 声明队列和交换的关系 -->
+        <rabbit:bindings>
+            <rabbit:binding pattern="message.*" queue="messageQueue"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+    <rabbit:template exchange="message" id="rabbitTemplate"
+                     connection-factory="connectionFactory"/>
+    <!-- 在消费者端的mq配置文件上添加,配置  关键代码为 acknowledeg = "manual"，意为表示该消费者的ack方式为手动 -->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual">
+        <rabbit:listener ref="messageConsumer" queues="messageQueue"/>
+    </rabbit:listener-container>
+
+          <!-- 声明队列 zxQueueOne -->
+    <!-- 声明消息队列，消息系统监听队列 -->
+    <rabbit:queue id="zxQueueOne" durable="true" auto-delete="false" exclusive="false" name="zxQueueOne">
+       <rabbit:queue-arguments>
+           <entry key="x-max-priority">
+               <value type="java.lang.Integer">1</value>
+           </entry>
+        </rabbit:queue-arguments>
+      </rabbit:queue>
+    <!-- exchange queue binging key 绑定 -->
+    <rabbit:topic-exchange name="zx" durable="true" auto-delete="false" id="zx">
+        <!-- 声明队列和交换的关系 -->
+        <rabbit:bindings>
+            <rabbit:binding pattern="zx.*" queue="zxQueueOne"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+    <rabbit:template exchange="zx" id="rabbitTemplate1"
+                     connection-factory="connectionFactory"/>
+    <!-- 在消费者端的mq配置文件上添加,配置  关键代码为 acknowledeg = "manual"，意为表示该消费者的ack方式为手动 -->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual">
+        <rabbit:listener ref="messageConsumer" queues="zxQueueOne"/>
+    </rabbit:listener-container>
+    
+         <!-- 声明队列 zxQueueTwo -->
+    <!-- 声明消息队列，消息系统监听队列 -->
+    <rabbit:queue id="zxQueueTwo" durable="true" auto-delete="false" exclusive="false" name="zxQueueTwo">
+       <rabbit:queue-arguments>
+           <entry key="x-max-priority">
+               <value type="java.lang.Integer">10</value>
+           </entry>
+        </rabbit:queue-arguments>
+     </rabbit:queue>
+    <!-- exchange queue binging key 绑定 -->
+    <rabbit:topic-exchange name="zx" durable="true" auto-delete="false" id="zx">
+        <!-- 声明队列和交换的关系 -->
+        <rabbit:bindings>
+            <rabbit:binding pattern="zx.*" queue="zxQueueTwo"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+    <rabbit:template exchange="zx" id="rabbitTemplate2"
+                     connection-factory="connectionFactory"/>
+    <!-- 在消费者端的mq配置文件上添加,配置  关键代码为 acknowledeg = "manual"，意为表示该消费者的ack方式为手动 -->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual">
+        <rabbit:listener ref="messageConsumer" queues="zxQueueTwo"/>
+    </rabbit:listener-container>
+
+
+    <!-- 发送者 -->
+    <bean id="messageSender" class="com.qif.mainstate.manage.tag.entity.MessageSender">
+        <property name="amqpTemplate" ref="rabbitTemplate1"></property>
+        <!--<property name="routingKey" value="hejun.*"></property>-->
+    </bean>
+    <bean id="messageSender1" class="com.qif.mainstate.manage.tag.entity.MessageSender">
+        <property name="amqpTemplate" ref="rabbitTemplate"></property>
+        <!--<property name="routingKey" value="message.*"></property>-->
+    </bean>
+
+    <!-- 消费者 -->
+    <bean id="messageConsumer" class="com.qif.mainstate.common.interceptor.MessageConsumer"/>
+
+    <!-- 异常处理，记录异常信息 -->
+    <bean id="mqErrorHandler" class="com.qif.mainstate.util.MQErrorHandler"/>
+    <!-- 将类自动注入，可解析msg信息 -->
+    <bean id="msgConverter" class="org.springframework.amqp.support.converter.SimpleMessageConverter"/>
+    <!-- 创建SimpleMessageListenerContainer的理想通道，主要实现异常事件处理逻辑 -->
+    <bean id="retryOperationsInterceptorFactoryBean"
+          class="org.springframework.amqp.rabbit.config.StatelessRetryOperationsInterceptorFactoryBean">
+        <property name="messageRecoverer">
+            <bean class="com.qif.mainstate.util.MQRepublishMessageRecoverer"/>
+        </property>
+        <property name="retryOperations">
+            <bean class="org.springframework.retry.support.RetryTemplate">
+                <property name="backOffPolicy">
+                    <bean class="org.springframework.retry.backoff.ExponentialBackOffPolicy">
+                        <property name="initialInterval" value="500"/>
+                        <property name="multiplier" value="10.0"/>
+                        <property name="maxInterval" value="10000"/>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+</beans>

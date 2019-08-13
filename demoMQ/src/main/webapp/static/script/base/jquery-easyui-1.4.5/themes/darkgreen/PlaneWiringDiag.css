@@ -1,0 +1,168 @@
+html, body, .container {
+    height: 100%;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li{list-style:none;}
+
+a{color:#000;text-decoration:none;}
+
+.container{
+    position:relative;
+}
+
+.left-tree{
+    width:250px;
+    height:100%;
+    font-size:20px;
+    overflow-y:auto;
+}
+
+
+.right-svg {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow:hidden;
+}
+
+    .right-svg .tools {
+        height: 30px;
+        /*background: #D1EEEE;*/
+    }
+
+        .right-svg .tools li {
+            float: left;
+            padding-right:10px;
+        }
+
+            .right-svg .tools li a {
+                display: block;
+                background: #fff;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 5px;
+                /*border: 1px solid #C9C9C9;*/
+                color: #555;
+            }
+
+    .right-svg .paper {
+        width: 100%;
+        height: calc(100% - 30px);
+        background: #000;
+        cursor: pointer;
+    }
+
+.device-list {
+    position: absolute;
+    top: -655px;
+    /*top:30px;*/
+    right: 0;
+    width: 280px;
+    height: 650px;
+    background: #fff;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#video {
+    height: 280px;
+    overflow: auto;
+}
+
+    #video li {
+        padding-left: 5px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        #video li:hover {
+            border:1px solid #2f81cb;
+        }
+/*.device-list img{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:10px auto;
+}*/
+
+.table{
+    width:250px;
+    height:100%;
+    font-size:18px;
+}
+
+.linksearch {
+    padding: 8px 25px;
+    background-color: #40c08d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2px 15px 4px;
+    top: -1px;
+}
+.tree-title {
+    font-size: 16px;
+    font-family: 'Microsoft YaHei'
+}
+
+.panel-body{
+    font-size:16px;
+}
+
+.tree li{
+    padding:3px 5px;
+}
+
+.tree-node {
+    background: url(/Areas/Patrol/assets/images/tree_normal.png);
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #386D2A;
+}
+
+.tree-file {
+    background: url(/Areas/Patrol/assets/images/task.png) no-repeat center;
+}
+
+.tree-title {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.tree-node-selected {
+    background: url(/Areas/Patrol/assets/images/tree_active.png);
+}
+
+.tree-indent, .tree-title, .tree-file, .tree-folder, .tree-collapsed {
+    vertical-align: middle;
+}
+
+.device-list {
+    background: #003941;
+}
+
+#video{
+    padding:3px 5px;
+}
+
+#video li {
+    background: url(/Areas/Patrol/assets/images/tree_normal.png);
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #386D2A;
+    margin:5px;
+}

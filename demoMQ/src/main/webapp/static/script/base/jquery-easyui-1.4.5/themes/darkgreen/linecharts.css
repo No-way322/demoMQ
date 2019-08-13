@@ -1,0 +1,57 @@
+﻿.head {
+    height: 80px;
+    line-height: 80px;
+    /*background-color: #f4f4f4;*/
+    background: url(images/bg.png);
+    border-bottom: 1px solid #52f0fb;
+    text-align: center;
+    font-size: 14px;
+    overflow-x: hidden;
+    color: #52f0fb;
+}
+
+.textbox {
+    border-radius: 0;
+}
+
+.findbutton {
+    padding: 8px 21px;
+    background-color: #40c08d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+a.findbutton:hover {
+    background-color: #4BC2A4;
+}
+
+a.findbutton:active {
+    background-color: #188F71;
+}
+
+.exportbutton {
+    padding: 8px 21px;
+    background-color: #f09069;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+a.exportbutton:hover {
+    background-color: #e8b19a;
+}
+
+a.exportbutton:active {
+    background-color: #e27e54;
+}
+
+#main {
+    background: url(images/bg.png) !important;
+}
+
+.time-axis { color: #4bc2a4 !important; }

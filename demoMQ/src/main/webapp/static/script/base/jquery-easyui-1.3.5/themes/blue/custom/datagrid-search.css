@@ -1,0 +1,47 @@
+﻿/*
+    datagrid 表头查询条件样式
+*/
+ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+.search-box:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.search-box>li{
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding:0 10px;
+    font-size:12px;
+}
+
+.search-box-btnlist input {
+    margin-left:5px;
+    padding: 3px 15px;
+    background: #0E1C2E;
+    font-size:12px;
+}
+
+    .search-box-btnlist input:hover {
+        cursor: pointer;
+        background: #2F4F47;
+    }
+
+/*datagrid行内按钮样式*/
+.datagrid-inner-btn {
+    padding: 2px 10px;
+    background: #0E1C2E;
+}
+
+.datagrid-inner-btn:hover{
+    cursor:pointer;
+}

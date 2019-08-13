@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.qif.mainstate.manage.tag.dao.TaginfoDao">
+
+    <!-- 按条件查询所有记录钥匙箱总数 -->
+    <select id="findTagInfoCount" resultType="Long">
+        SELECT count(1) FROM m_taginfo
+    </select>
+
+    <select id="findTagInfoAll" resultType="com.qif.mainstate.manage.tag.entity.TagInfo">
+        SELECT * FROM m_taginfo
+    </select>
+
+    <!-- 按条件分页查询记录钥匙箱 -->
+    <select id="findTagInfoList" resultType="com.qif.mainstate.manage.tag.entity.TagInfo">
+        SELECT * FROM m_taginfo LIMIT #{start},#{pageSize}
+    </select>
+
+</mapper>

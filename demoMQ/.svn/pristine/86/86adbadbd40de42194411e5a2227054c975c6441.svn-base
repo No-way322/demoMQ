@@ -1,0 +1,9 @@
+*{color: #47dae3;}
+body{margin:0;padding:10px 0;background-color:#003941;overflow:hidden;}
+.head div{float:left;height:100%;width:120px;font-family:微软雅黑;text-align:center;font-weight:bold;cursor:pointer;font-size:14px;}
+.activetab{background: #003941; font-weight:bold;}
+.content{height:390px;overflow:hidden;}
+.table tr td{padding:12px 5px;}
+#title{cursor:move; position:relative;height:20px;padding:12px; line-height:20px;color:#fff;font-size:17px; font-weight:bolder;}
+.head{height:36px; line-height:36px;background: #012823;color: #adeef7;border-top: 1px solid #012823;border-bottom: 1px solid #012823;}
+.window-button{margin-top: 5px!important;}

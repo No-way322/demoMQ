@@ -1,0 +1,56 @@
+.CompareBody {
+    height: 100%;
+    margin: 0;
+    /* background: url('../../../../Scripts/jquery-easyui-1.4.5/themes/blue/images/bg.png'); */
+}
+#CompareWap {
+    width: 100%;
+    height: 100%;
+}
+.chart-content {
+    /* background: url('../../../../Scripts/jquery-easyui-1.4.5/themes/blue/images/bg.png'); */
+}
+
+.eleChart {
+    width: 49%;
+    height: 50%;
+    display: inline-block;
+    border: 1px solid #47dae3;
+}
+
+.chart-content > div:nth-child(1) {
+   
+    border-right: 0;
+}
+
+.chart-content > div:nth-child(3) {
+    border-top:0;
+}
+
+.chart-content > div:nth-child(4) {
+    border-left: 0;
+    border-top: 0;
+}
+
+#CompareWap .textbox {
+    border-radius: unset;
+    /* border: 1px solid #b3bbb3; */
+}
+
+#Time_Part .textbox {
+    width: 98px !important;
+    height: 28px !important;
+}
+#CompareWap .timeSpan {
+    color: #8FD8FE;
+}
+.linksearch {
+    border-radius: unset;
+    padding: 3px 15px;
+    background-color: #0c1929;
+    color: #47dae3;
+    border: 1px solid rgba(0, 245, 255, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}

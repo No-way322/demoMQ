@@ -1,0 +1,77 @@
+﻿.processWin {
+    background-color: #2a7abf;
+    margin-left: 0px;
+    width: 685px;
+    height: 600px;
+    z-index: 999;
+}
+
+.right-bottom-main {
+    background: url(images/bg.png);
+    color: #52f0fb;
+}
+
+#Pos_Images_N {
+    background: url(images/bg.png);
+}
+
+.total-pic-title div {
+    /*background-color: #ceeaf5;*/
+    color: #45d4de;
+    width: 45%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    float: left;
+    border: 1px solid #ceeaf5;
+}
+
+.total-pic-show .selected {
+    background-color: #ceeaf5;
+    color: #2d3a4a;
+}
+    .total-pic-title div:nth-of-type(2) {
+        margin-left:5px;
+    }
+
+
+
+#Pos_Images_N {
+    border: 1px solid #0195f4;
+}
+
+#PointChart {
+    background: url(images/bg.png);
+}
+
+.total-pic-show li div {
+    background: url(images/bg.png);
+    border: 1px solid #0192ef;
+}
+.total-pic-show li span {
+    color: #49e2ed;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #0b1e2f;
+}
+
+::-webkit-scrollbar {
+    background-color: #0b1e2f;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0b1e2f;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #52f0fb;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+﻿.doorbutton {
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    /*background-color:#f4f4f4;*/
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    font-weight: normal;
+    background: -webkit-linear-gradient( 90deg, rgb(1,44,49) 0%, rgb(2,75,81) 42%, rgb(8,155,165) 100%);
+}
+
+.tabactive {
+    background: #adeef7;
+    color: #012c31;
+    font-weight: bold;
+}
+
+.grid-title {
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.switchbutton {
+    margin-bottom: 2px;
+}

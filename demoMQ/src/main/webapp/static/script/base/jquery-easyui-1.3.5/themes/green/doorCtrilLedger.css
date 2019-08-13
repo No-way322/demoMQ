@@ -1,0 +1,27 @@
+﻿.doorbutton {
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    /*background-color:#f4f4f4;*/
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.tabactive {
+    background-color: #40c08d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.grid-title {
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.switchbutton {
+    margin-bottom: 2px;
+}

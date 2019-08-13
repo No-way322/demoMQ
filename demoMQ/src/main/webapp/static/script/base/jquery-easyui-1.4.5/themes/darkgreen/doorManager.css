@@ -1,0 +1,43 @@
+﻿
+#doorconfig input[type='text'] {
+    width: 150px;
+    overflow: auto;
+}
+
+#doorconfig tr td {
+    padding: 6px 0;
+    text-align: left;
+}
+
+.control {
+    width: 240px;
+}
+
+.check {
+    width: 130px;
+}
+
+.grid-title {
+    border-bottom: none;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.doorbutton {
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    /*background-color:#f4f4f4;*/
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    font-weight: normal;
+    background: -webkit-linear-gradient( 90deg, rgb(1,44,49) 0%, rgb(2,75,81) 42%, rgb(8,155,165) 100%);
+}
+
+.tabactive {
+    /*background-color: #40c08d;*/
+    background: #adeef7;
+    color: #012c31;
+    font-weight: bold;
+}

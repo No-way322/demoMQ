@@ -1,0 +1,33 @@
+html,body{
+	height:100%;
+}
+body,ul{
+	margin:0;
+	padding:0;
+}
+	
+.clear{
+	zoom:1;
+}
+	
+.clear:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+	
+li{
+	list-style:none;
+}
+	
+.searchTool{
+	height:40px;
+
+}
+	
+.searchBox li{
+	float:left;
+	margin-left:20px;
+	height:40px;
+	line-height:40px;
+}

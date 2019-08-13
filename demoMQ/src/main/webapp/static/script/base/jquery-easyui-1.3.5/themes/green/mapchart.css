@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+    border-left: 2px solid rgb(0, 111, 107);
+    border-right: 2px solid rgb(0, 111, 107);
+    height: 646px;
+}
+
+.alertmessage {
+    position: absolute;
+    border: 1px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    line-height: 1.3em;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 2px 13px;
+    display: none;
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.title {
+    position: absolute;
+    color: rgba(187, 255, 214, 0.75);
+    font-size: 1.5em;
+    font-weight: bolder;
+    z-index: 10000;
+}
+
+#timeout {
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    color: #def5f5;
+    z-index: 1003;
+}
+
+#bar {
+    position: absolute;
+    z-index: 999;
+}
+
+#mapcontent {
+    position: absolute;
+}
+
+#scrollmessage {
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+}
+
+#scrollqueue {
+    position: absolute;
+    width: 100%;
+    z-index: 1002;
+}
+
+.move {
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 2px;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1003;
+    width: 90%;
+    height: 55px;
+    top: 0;
+    background: -webkit-linear-gradient(rgba(27, 27, 27, 1), rgba(27, 27, 27, 0));
+    background: -moz-linear-gradient(rgba(27, 27, 27, 1), rgba(27, 27, 27, 0));
+    background: linear-gradient(rgba(27, 27, 27, 1), rgba(27, 27, 27, 0));
+}
+
+.shade1 {
+    position: absolute;
+    z-index: 1003;
+    width: inherit;
+    height: 55px;
+    bottom: 0;
+    background: -webkit-linear-gradient(rgba(27, 27, 27, 0), rgba(27, 27, 27, 1));
+    background: -moz-linear-gradient(rgba(27, 27, 27, 0), rgba(27, 27, 27, 1));
+    background: linear-gradient(rgba(27, 27, 27, 0), rgba(27, 27, 27, 1));
+}
+
+.map_title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 微软雅黑;
+    height: 36px;
+    line-height: 36px;
+    background-color: #006f6b;
+    position: relative;
+    font-weight: bold;
+}

@@ -1,0 +1,140 @@
+.tree_title {
+    height: 30px;
+    line-height: 30px;
+    background-image: url('Images/bg.png');
+    padding-left: 30px;
+    color: #47dae3;
+    font-weight: bold;
+}
+
+.tree-node {
+    position: relative;
+}
+
+.org_menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 10;
+}
+
+.addorg {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+    background-image: url('Images/addorg.png');
+    background-repeat: no-repeat;
+}
+
+.deleteorg {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+    background-image: url('Images/deleteorg.png');
+    background-repeat: no-repeat;
+}
+
+.updateorg {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+    background-image: url('Images/updateorg.png');
+    background-repeat: no-repeat;
+}
+
+.tab {
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #adeef7;
+    background: -webkit-linear-gradient( 90deg, rgb(1,44,49) 0%, rgb(2,75,81) 42%, rgb(8,155,165) 100%);
+}
+
+.tab-active {
+    /* background-color: #ffffff;
+    color: #209373; */
+    /* background: -webkit-linear-gradient( 90deg, rgb(1,44,49) 0%, rgb(2,75,81) 42%, rgb(8,155,165) 100%); */
+   background: #adeef7;
+   color: #012c31;
+}
+
+.uploadbutton {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: #f09069;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 30px;
+    padding-right: 12px;
+    background-image: url('Images/uploadimg_icon.png');
+    background-repeat: no-repeat;
+    background-position: 12px 7px;
+}
+
+a.uploadbutton:hover {
+    background-color: #e8b19a;
+}
+
+a.uploadbutton:active {
+    background-color: #e27e54;
+}
+
+.importchoosebuttom {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    /* background-color: #40c08d;
+    color: #fff; */
+    background: #0c1929;
+    color: #47dae3;
+    width: 80px;
+    text-align: center;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+.lefttree_content {
+    float: left;
+    height: 390px;
+    overflow: hidden;
+    width: 260px;
+    background-color: #fff;
+    border: 1px solid #bbbbbb;
+    font-size: 16px;
+}
+
+.righttree_content {
+    float: right;
+    height: 390px;
+    overflow: hidden;
+    width: 260px;
+    background-color: #fff;
+    border: 1px solid #bbbbbb;
+    font-size: 16px;
+}
+
+.ruletitle {
+    background-color: #209373;
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ExcelTemplate{
+    color: #47dae3;
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+﻿body {
+    background: url('images/bg.png');
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,p{
+    margin:0;
+    padding:0;
+}
+
+.txtColor{
+    color: #47dae3;
+}
+
+.txtCenter{
+    text-align:center;
+}
+
+.txtBig{
+    font-size:30px;
+}
+
+.txtNormal{
+    font-size:20px;
+}
+
+.txtSmall{
+    font-size:16px;
+}
+
+.titleBackground {
+    background-color: rgba(42, 60, 78, 0.8) !important;
+    border: none !important;
+    color: #47dae3;
+}
+
+.searchbox {
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+
+/*滚动条样式*/
+
+::-webkit-scrollbar,
+::-webkit-scrollbar:hover,
+::-webkit-scrollbar-track {
+    background-color: #2A3C4A;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+    background: #485D6C;
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:start {
+    background: url(/Images/scrollbar/left.png);
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:end {
+    background: url(/Images/scrollbar/right.png);
+}
+
+::-webkit-scrollbar-button:vertical:single-button:start {
+    background: url(/Images/scrollbar/up.png);
+}
+
+::-webkit-scrollbar-button:vertical:single-button:end {
+    background: url(/Images/scrollbar/down.png);
+}

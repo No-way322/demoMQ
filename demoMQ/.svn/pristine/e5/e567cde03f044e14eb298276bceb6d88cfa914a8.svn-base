@@ -1,0 +1,102 @@
+
+html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+   
+}
+
+.dataManage-contaner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.video-container {
+    border: 1px solid #dbdbdb;
+}
+.dataManageRight {
+    width: calc(100% - 270px);
+    height: 100%;
+    margin-left: 266px;
+}
+
+.video-main {
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+    height: calc(100% - 115px);
+    overflow: auto;
+    font-size: 0;
+    background-color: #f4f4f4;
+    margin-top:0;
+}
+.DataManage-tree {
+    width: 260px;
+    border: 1px solid #dbdbdb;
+    height: calc(100% - 13px);
+}
+    .DataManage-tree ,
+    .dataManageRight {
+        position:absolute;
+        display: inline-block;
+    }
+#RepairPieAll .PieChild{
+    /*border:1px solid red;*/
+    display:inline-block;
+    width:33%;
+    height:48%;
+}
+#Repair_col {
+    width: 90%;
+    height: 90%;
+    margin: 20px auto;
+}
+.repairTitle{
+width:100%;
+height:30px;
+}
+.repairTitle {
+    width: calc(100% - 2px);
+    height: 35px;
+    line-height: 35px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#repairRcuName {
+    margin-left: 10px;
+}
+
+.video-head {
+    height: 55px;
+    line-height: 55px
+}
+
+#videoHead .datebox {
+    height: 27px !important;
+    width: 115px !important;
+    border-radius: unset;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+#videoHead .textbox-text {
+    height: 28px !important;
+}
+
+#videoHead .textbox {
+    height: 28px !important;
+    border-radius: unset;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+#videoHead .btn {
+    border-radius: unset;
+    width: 60px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left:8px;
+
+}
+
+
+

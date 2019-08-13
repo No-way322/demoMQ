@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    <plugins>
+       <plugin interceptor="com.qif.mainstate.common.pager.PagePlugin">
+          <property name="dialect" value="MySql" />
+          <property name="pageSqlId" value=".*Pager.*" />
+        </plugin>
+    </plugins>
+	<mappers>
+		<mapper resource="com/qif/mainstate/manage/tag/dao/TagInfoDao.xml"/>
+	</mappers>
+</configuration>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

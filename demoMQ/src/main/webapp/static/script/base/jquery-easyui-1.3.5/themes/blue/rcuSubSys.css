@@ -1,0 +1,116 @@
+﻿.panel-body {
+    position: relative;
+}
+
+.iframe {
+    margin: auto;
+    display: block;
+    /* position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0; */
+}
+
+.device-box {
+    float: left;
+}
+
+.device {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+}
+
+.title {
+    padding-left: 20px;
+    background-color: #0065b3;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #fefefe;
+    cursor: move;
+}
+
+.title span:hover {
+    color: #f1ff19;
+    cursor: pointer;
+}
+
+.content {
+    border: 2px solid #0065b3;
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.device-box {
+    text-align: center;
+    overflow: hidden;
+}
+
+.tabs-header {
+    background-color: #0065b3;
+    border-color: #0065b3
+}
+
+.tabs {
+    border-width: 0px !important;
+    height: 30px !important;
+}
+
+.tabs li a.tabs-inner {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    height: 30px !important;
+    color: #fff;
+}
+
+.tabs-close {
+    color: #fff;
+}
+
+.tabs-scroller-right,
+.tabs-scroller-left {
+    background-color: #0065b3;
+    border: none;
+}
+
+.tabs-selected {
+    background: #f4f4f4;
+    color: #000000;
+    border-width: 0;
+}
+
+.tabs-inner {
+    border-width: 0 !important;
+}
+
+.button a {
+    color: #e5f1ed;
+    text-decoration: none;
+}
+
+.tabs li a.tabs-inner {
+    background-color: #0065b3;
+    background: -webkit-linear-gradient(top, #0065b3 0, #0065b3 100%);
+    background: -moz-linear-gradient(top, #0065b3 0, #0065b3 100%);
+    background: -o-linear-gradient(top, #0065b3 0, #0065b3 100%);
+    background: linear-gradient(to bottom, #0065b3 0, #0065b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0065b3, endColorstr=#0065b3, GradientType=0);
+}
+
+.tabs li.tabs-selected a.tabs-inner {
+    background-color: #eaeaea;
+    color: #0E2D5F;
+    background: -webkit-linear-gradient(top, #eaeaea 0, #eaeaea 100%);
+    background: -moz-linear-gradient(top, #eaeaea 0, #eaeaea 100%);
+    background: -o-linear-gradient(top, #eaeaea 0, #eaeaea 100%);
+    background: linear-gradient(to bottom, #eaeaea 0, #eaeaea 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#eaeaea, endColorstr=#eaeaea, GradientType=0);
+}

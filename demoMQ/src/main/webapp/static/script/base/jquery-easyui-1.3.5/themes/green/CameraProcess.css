@@ -1,0 +1,7 @@
+body{padding:0;margin:0;background-color:#f4f4f4;overflow:hidden;}
+.head div{display:inline-block;width:120px;color:#666;font-family:微软雅黑;text-align:center;font-weight:bold;cursor:pointer;font-size:14px;}
+.activetab{background-color:#fff;color:#40c08d  !important;font-weight:bold;}
+.content{height:390px;overflow:hidden;background-color:#fff;}
+.table tr td{padding:12px 5px;}
+#title{cursor:move; position:relative;background-color:#209373;height:20px;padding:12px; line-height:20px;color:#fff;font-size:17px; font-weight:bolder;}
+.head{height:36px; line-height:36px; background-color:#f4f4f4;}

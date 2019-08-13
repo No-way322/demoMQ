@@ -1,0 +1,93 @@
+﻿.processWin {
+    background-color: #2a7abf;
+    margin-left: 0px;
+    width: 685px;
+    height: 600px;
+    z-index: 999;
+}
+
+.right-bottom-main {
+    background: url(images/bg.png);
+    color: #52f0fb;
+}
+
+    .right-bottom-main h1 a {
+        color: #52f0fb;
+        text-decoration:none;
+    }
+
+#Pos_Images_N {
+    background: url(images/bg.png);
+}
+
+.total-pic-title div {
+    /*background-color: #ceeaf5;*/
+    color: #45d4de;
+    width: 45%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    float: left;
+    border: 1px solid #ceeaf5;
+}
+
+.total-pic-show .selected {
+    background-color: #ceeaf5;
+    color: #2d3a4a;
+}
+    .total-pic-title div:nth-of-type(2) {
+        margin-left:5px;
+    }
+.f-tbody .f-td:hover{
+    color: #47dae3;
+    background: -moz-linear-gradient( 90deg, rgb(1, 44, 49) 0%, rgb(2, 75, 81) 42%, rgb(8, 155, 165) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(1, 44, 49) 0%, rgb(2, 75, 81) 42%, rgb(8, 155, 165) 100%);
+}
+
+
+#Pos_Images_N {
+    border: 1px solid #278076;
+}
+
+#PointChart {
+    background: url(images/bg.png);
+}
+
+.total-pic-show li div {
+    background: url(images/bg.png);
+    border: 1px solid #278076;
+}
+.total-pic-show li span {
+    color: #49e2ed;
+}
+
+/*::-webkit-scrollbar {
+    background-color: #053238;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #094047;
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:start {
+    background: url(/Images/scrollbar/left.png);
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:end {
+    background: url(/Images/scrollbar/right.png);
+}
+
+::-webkit-scrollbar-button:vertical:single-button:start {
+    background: url(/Images/scrollbar/up.png);
+}
+
+::-webkit-scrollbar-button:vertical:single-button:end {
+    background: url(/Images/scrollbar/down.png);
+}*/
+
+
+
+

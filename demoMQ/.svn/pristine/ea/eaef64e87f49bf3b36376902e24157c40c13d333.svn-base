@@ -1,0 +1,18 @@
+.importchoosebuttom {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #40c08d;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+    margin-left: -3px;
+    cursor: pointer;
+}
+.grid-line{
+    height:30px;
+    line-height:32px; 
+    padding-left:32px; 
+    font-size:14px;
+    color:#222;
+}

@@ -1,0 +1,142 @@
+*{
+    color: #47dae3;
+}
+body{
+    margin:0; 
+    padding:10px 0;
+    background-color:#003941;
+    overflow:hidden;
+}
+.head {
+    height: 34px;
+    line-height: 34px;
+    background-color: #003941;
+    border: 1px solid #278076;
+    overflow: hidden;
+    position: relative;
+}
+
+#headtitle {
+    height: 34px;
+    line-height: 34px;
+    color: #47dae3;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+
+.head ul {
+    margin: 0;
+    padding: 0;
+}
+
+    .head ul li {
+        list-style-type: none;
+        float: left;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        color: #47dae3;
+    }
+
+.tabactive {
+    background-color: #51D5B0;
+    color: #fff !important;
+}
+
+.body {
+    overflow: hidden;
+    background-color: #003941;
+}
+
+.textbox {
+    border-color: #278076;
+    border-radius: 0;
+}
+
+.content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.grid-search, .grid-line {
+    border-left: 1px solid #278076;
+    color: #47dae3;
+}
+
+.phototitle {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #278076;
+    padding-left: 10px;
+    color: #269374;
+    background-color: #003941;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.datahead {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.line-head {
+    height: 36px;
+    line-height: 36px;
+    background-color: #17AF86;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+#max-min-value {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+    #max-min-value span {
+        margin-right: 10px;
+    }
+
+.datahead .textbox {
+    border-color: #278076
+}
+
+.databody {
+    position: absolute;
+    top: 45px;
+    bottom: 2px;
+    width: 100%;
+}
+
+.contentstyle {
+    border: 1px solid #278076;
+    background-color: #003941;
+    height: 100%;
+    position: relative;
+}
+
+#linemap {
+    position: absolute;
+    top: 36px;
+    height: 250px;
+    width: 100%;
+}
+
+#datagrid {
+    position: absolute;
+    top: 295px;
+    bottom: 0;
+    width: 100%;
+}

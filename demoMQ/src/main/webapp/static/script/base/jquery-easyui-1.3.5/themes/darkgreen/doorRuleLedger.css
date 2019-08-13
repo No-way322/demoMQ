@@ -1,0 +1,17 @@
+﻿.doorrulebutton {
+    width: 120px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    cursor: pointer;
+    font-weight: normal;
+    background: -webkit-linear-gradient( 90deg, rgb(1,44,49) 0%, rgb(2,75,81) 42%, rgb(8,155,165) 100%);
+}
+
+.tabactive {
+    /*background-color: #40c08d;*/
+    background: #adeef7;
+    color: #012c31;
+    font-weight: bold;
+}

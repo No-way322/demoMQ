@@ -1,0 +1,40 @@
+.pathTitle {
+    height:33px;
+    background: #40c08d;
+    line-height:33px;
+    padding-left:15px;
+    color: white;
+    font-weight:bold;
+    font-family:微软雅黑;
+    font-size:13px;
+}
+.pathTitle-1 {
+    background-color: #f4f4f4;
+    height:360px;
+    overflow: auto;
+    position: relative;
+}
+.patrolPoint {
+    width: calc(60% - 2px);
+    float: right;
+    overflow: hidden;
+    /* border-right: 1px solid #47dae3; */
+    /* border-bottom: 1px solid #47dae3; */
+}
+.patrolPoint-1 {
+    height:33px;
+    line-height:33px;
+    padding-left:15px;
+    color: white;
+    font-weight:bold;
+    font-family:微软雅黑;
+    font-size:13px;
+    background-color: #40c08d;
+}
+.patrolPoint-2 {
+    background: #f4f4f4;
+    height: 360px;
+    overflow: auto;
+}
+ auto;
+}

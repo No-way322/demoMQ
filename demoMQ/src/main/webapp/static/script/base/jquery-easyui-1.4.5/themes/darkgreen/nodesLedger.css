@@ -1,0 +1,16 @@
+*{color: #47dae3;}
+body{margin:0;padding:10px 0;background-color:#003941;overflow:hidden;}
+.importchoosebuttom { display: inline-block; height: 30px; line-height: 30px;     background: url("/Images/btns/btn.png") center no-repeat; width: 80px; text-align: center; margin-left: -3px; cursor: pointer; }
+.grid-line { height: auto; line-height: 22px; padding: 10px 22px; font-size: 14px; color: #47dae3; box-sizing: border-box; word-spacing: -0.3em; }
+.grid-line .grid-line-col { display: inline; }
+.grid-line .grid-line-col-left { margin-right: 3px; display: inline-block; width: 14px; height: 14px; margin-bottom: -2px; }
+.grid-line .grid-line-col-right { margin: 0 5px 0 3px; }
+.grid-line-green { background-color: #40c08d; }
+.grid-line-red { background-color: #ff0000; }
+.grid-line-pink { background-color: #ff00f7; }
+.grid-line-blue { background-color: #0cb1ff; }
+.grid-line-blue2 { background-color: #5600ff; }
+.grid-line-blue3 { background-color: #0495F7; }
+.grid-title{
+    padding-left: 20px;
+}

@@ -1,0 +1,81 @@
+﻿ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    zoom: 1;
+}
+
+    .clear:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+.nav ul {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+.nav li {
+    float: left;
+    width: 20%;
+    height: 56px;
+    position: relative;
+}
+
+    .nav li a {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box; /* Firefox */
+        -webkit-box-sizing: border-box; /* Safari */
+        display: block;
+        width: 100%;
+        height: 56px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 54px;
+        text-indent: 40px;
+        border-right: 1px solid #fff;
+    }
+
+    .nav li:nth-of-type(1) a {
+        background: url('/Content/vqd/img/data.png') no-repeat 85% center;
+        background-color: #42aecb;
+    }
+    .nav li:nth-of-type(2) a {
+        background: url('/Content/vqd/img/data.png') no-repeat 85% center;
+        background-color: #42aecb;
+    }
+
+    .nav li:nth-of-type(3) a {
+        background: url('/Content/vqd/img/analysis.png') no-repeat 85% center;
+        background-color: #42aecb;
+    }
+
+    .nav li:nth-of-type(4) a {
+        background: url('/Content/vqd/img/history.png') no-repeat 85% center;
+        background-color: #42aecb;
+    }
+
+    .nav li:nth-of-type(5) a {
+        background: url('/Content/vqd/img/config.png') no-repeat 85% center;
+        background-color: #42aecb;
+    }
+
+    .nav li a:hover {
+        background-color: #2d8ba5;
+    }
+
+.nav .clear li .selected {
+    background-color: #2d8ba5;
+}

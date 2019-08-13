@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.searchBox{
+    /* height: 50px;
+    line-height: 50px; */
+    list-style: none;
+    padding: 10px 0;
+}
+.searchBox>li{
+    float: left;
+    font-size: 12px;
+    padding-left: 5px;
+    height:30px;
+    line-height:30px;
+    width: 230px;
+}
+.searchBox>li>label{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+.searchBox{
+    zoom: 1;
+}
+.searchBox:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.clear {
+    zoom: 1;
+}
+
+    .clear:after {
+        display: block;
+        content: '';
+        clear: both;
+    }

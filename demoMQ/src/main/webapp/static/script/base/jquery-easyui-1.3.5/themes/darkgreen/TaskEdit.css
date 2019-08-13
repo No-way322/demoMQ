@@ -1,0 +1,28 @@
+body,ul,li{ margin:0;padding:0;list-style:none; }
+.main{height: 474px;width: 950px;margin: auto;padding:15px;}
+/*基本信息样式*/
+.essential { height: 444px;width:268px; float:left;padding:15px; margin-right:15px; line-height:normal !important;}
+.essential>ul{ height:100%;}
+.essential-item>li{float:left;width:100%;  }
+.essential-item>li label{ font-weight:bold;line-height: 60px; }
+.month li{ width:40px; float:left;}
+#task_Name,#task_Mode,#task_Type{ width:180px;}
+.essential-item li:last-child>div.cur{ display:block;}
+.essential-item li:last-child>div{ display:none;}
+
+
+/*下面的样式为重写easy ui的样式*/
+.combobox-item, .combobox-group, .combobox-stick,.textbox .textbox-text{font-size:16px;}
+.textbox,.textbox .textbox-text{-moz-border-radius: 0;-webkit-border-radius: 0;  border-radius: 0;}
+.combo-arrow{background-color:#baeddd;}
+.combo .textbox-addon a{ width:28px !important;}
+.textbox.spinner,.textbox.spinner .textbox-text,.textbox.spinner .spinner-arrow{ height:23px !important;}
+.textbox{ margin-top:0px;}
+
+/*自定义CheckBox样式*/
+.custom-check{display:inline-block; margin:0; padding:0;}
+.custom-check label {width: 20px;height: 20px;display:inline-block;cursor: pointer; padding-bottom:3px; padding-left:3px;border-radius:5px;}
+.custom-check label:after {content:"";width: 15px; height: 8px;display:inline-block;border: 3px solid #3EBF8D; border-top: none;border-right: none; opacity: 0;-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+.custom-check label:hover::after {opacity: 0.3;}
+.custom-check input[type=checkbox], .custom-check input[type=radio] { display:none;}
+.custom-check input[type=checkbox]:checked + label:after , .custom-check input[type=radio]:checked + label:after{ opacity: 1;}

@@ -1,0 +1,28 @@
+*{
+    color: #47dae3;
+}
+body{
+    margin:0; 
+    padding:10px 0;
+    background-color:#003941;
+    overflow:hidden;
+}
+.importchoosebuttom {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background: url("/Images/btns/btn.png") center no-repeat;
+    width: 80px;
+    text-align: center;
+    margin-left: -3px;
+    cursor: pointer;
+}
+.grid-line{
+    height:30px;
+    line-height:32px; 
+    padding-left:32px; 
+    font-size:14px;
+}
+.grid-title{
+    padding-left: 20px;
+}

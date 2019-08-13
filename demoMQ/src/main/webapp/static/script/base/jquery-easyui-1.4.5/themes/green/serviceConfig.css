@@ -1,0 +1,50 @@
+﻿body {
+    background: #fff;
+}
+
+.head {
+    height: 34px;
+    line-height: 34px;
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    position: relative;
+}
+
+#headtitle {
+    height: 34px;
+    line-height: 34px;
+    color: #40c08d;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+
+.body {
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.grid-search, .grid-line {
+    border-left: 1px solid #dbdbdb;
+}
+
+#evr_form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+    #evr_form table {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+.movechange:hover
+{
+    color:Black;
+}
