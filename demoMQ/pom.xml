@@ -390,7 +390,7 @@
         <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-mongodb</artifactId>
-        <version>1.8.4.RELEASE</version>
+        <version>3.3.5</version>
         </dependency>
         <!--&lt;!&ndash;MongoDB驱动包&ndash;&gt;-->
         <dependency>
